@@ -223,6 +223,17 @@ CopyStream(OutStream, InStream);
 
 ---
 
+## Data Classification Module
+**Error**: _The event 'OnGetPrivacyMasterTables' is not found in the target_
+
+**Solution**: The event has been renamed to 'OnGetDataPrivacyEntities'.
+
+**Error**: _Record 'Data Privacy Entities' does not contain a definition for 'InsertRow'_
+
+**Solution**: The function has been moved to codeunit 1750 'Data Classification Mgt.' and has been renamed to 'InsertDataPrivacyEntity'.
+
+---
+
 ## Data Compression Module
 **Error**: _Codeunit 'Zip Stream Wrapper' is missing_
 
